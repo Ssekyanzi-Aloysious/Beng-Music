@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto',sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    margin-right: 40px;
+}
+ul li a:hover{
+    color: rgb(235, 180, 41);
+}
+nav{
+    padding: 40px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgb(231, 196, 40);
+    background: #000;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    color: #fff;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+.nav-middle{
+    /* middle ------------------------------*/
+}
+.main1{
+    min-height: 100vh;
+    background-image: url(/img/mixer2.jpg);
+    background-position: center; 
+    background-size: cover;
+    display: flex;
+}
+.main1 .sub-main1{
+    width: 100%;
+    color: #fff;
+    align-self: center;
+    text-align: center;
+}
+.main1 .sub-main1 h1{
+    font-size: 55px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.main1 .sub-main1 h3{
+    margin-bottom: 12%;
+}
+button{
+    padding: 10px 30px;
+    background-color: goldenrod;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: #daa520a1;
+}
+.main1 .sub-main1 button{
+    margin-bottom: 100px;
+    padding: 10px 40px;
+}
+.main1 .sub-main1 p{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.main1 .sub-main1 .phone{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: goldenrod;
+    font-weight: 600;
+}
+
+
+.main2{
+    min-height: 90vh;
+    background-color: #282829;
+    color: #fff;
+    text-align: center;    
+    padding-top: 8%;
+    overflow: hidden;
+}
+.main2 h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.main2 p{
+    color: #6e6e6e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 20%;
+}
+.main2 .emphasise{
+    color: goldenrod;
+    margin-bottom: 70px;
+}
+.main2 button{
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.main3 img{
+    width: 270px;
+}
+.main3 h2{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.main3 p{
+    width: 270px;
+}
+
+.main3{
+    padding: 0 2%;
+    padding-bottom: 5%;
+    min-height: 100vh;
+    background-color: #1f1f1f;
+    display: flex;
+    text-align: center;
+    color: #6e6e6e;
+    justify-content: space-evenly;
+    overflow: hidden;
+    gap: 2rem;
+}
+.more{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.more a{
+    color: goldenrod;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.more a:hover{
+    opacity: .7;
+}
+.footer{
+    background-color: #1f1f1f;
+    text-align: center;
+    color: #6e6e6e;
+    padding: 15px 0;
+}
+
+
+
+
+
+
+
+
+@media (max-width:900px){
+    .nav-middle{
+        display: none;
+    }
+    nav{
+        padding: 20px 2%;
+    }
+    .main1{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .main1 .sub-main1 h1{
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    .main1 .sub-main1 h3{
+        font-size: 16px;
+    }
+    .main2 button{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .main2 .emphasise{
+        color: goldenrod;
+        margin-bottom: 35px;
+    }
+    .main2 .emphasise span{
+        display: block;
+    }
+    .main3 img{
+        width: 400px;
+    }
+    .main3 p{
+        width: 390px;
+        text-align: center;
+    }
+    .main3{
+        flex-wrap: wrap;
+    }
+}
